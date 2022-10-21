@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-hosted
+    runs-on: ubuntu-latest
     defaults:
        run:
          working-directory: ./Client/
