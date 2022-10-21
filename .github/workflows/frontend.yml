@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
        run:
-         working-directory: ./Client/
+         working-directory: ./Client/ci.cd.client
     strategy:
       matrix:
         node-version: [14.x]
@@ -31,7 +31,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        angular_project_dir: ./ci.cd.client/Dist/Client-app
     - run: npm ci
-      working-directory: './Client'
+      working-directory: ./ci.cd.client/Client
     - run: npm run start
-      working-directory: './Client/package-lock.json'
+      working-directory: ./ci.cd.client/Client/package-lock.json
