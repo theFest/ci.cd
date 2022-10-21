@@ -8,7 +8,7 @@ namespace CI.CD.Server.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-        "Zima", "Puse", "Prohladno", "Hladno", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        "Zima", "Puse", "Prohladno", "Hladno", "Mild", "Vruce", "Onako", "JakoVruce", "Sweltering", "Scorching"
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
